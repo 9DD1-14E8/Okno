@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop The World</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">SHOP THE WORLD</div>
+        <div class="cart-login">
+            <button id="loginBtn">Login</button>
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <h3>Samsung Galaxy S25 Ultra</h3>
+            <img src="samsung-s25-ultra.jpg" alt="Samsung S25 Ultra">
+            <button class="buy-btn" disabled>Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Firebase Authentication Modal -->
+    <div class="auth-modal" id="authModal">
+        <div class="modal-content">
+            <h2>Login / Register</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="signUp">Sign Up</button>
+            <button id="signIn">Login</button>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
